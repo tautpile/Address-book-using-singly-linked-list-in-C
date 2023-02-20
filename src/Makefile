@@ -8,10 +8,10 @@ CFLAGS:=-Wall
 all: $(BIN)
 
 $(BIN): $(OBJS)
-	$(CC) $(CPPFLAGS) -o $(BIN) $(OBJS) $(LDFLAGS) 
+	$(CC) -o $(BIN) $(OBJS) $(LDFLAGS) 
 
 %.o: %.c
-	$(CC) $(CFLAGS) $(CPPFLAGS) -c -o $@ $^ $(LDFLAGS)
+	$(CC) $(CFLAGS) $(CPPFLAGS) -c -o $@ $^
 
 clean:
 	$(RM) $(BIN) $(OBJS)
