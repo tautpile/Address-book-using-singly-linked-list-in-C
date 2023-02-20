@@ -3,7 +3,6 @@
 #include <string.h>
 #include <signal.h>
 #include "function_list.h"
-//#include "helping_functions.h"
 
 static void check_condition(char *input, struct address *temp)
 {
